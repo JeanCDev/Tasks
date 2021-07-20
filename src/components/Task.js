@@ -22,7 +22,7 @@ export default function Task(props) {
   }
 
   const doneOrNotStyle = props.doneAt != null ? {textDecorationLine: 'line-through'} : {}
-  const date = moment(props.doneAt ? props.doneAt : props.estimatedAt).locale('pt-br').format('ddd, D [de] MMMM');
+  const date = moment(props.doneAt ? props.doneAt : props.estimateAt).locale('pt-br').format('ddd, D [de] MMMM');
 
   const getRightContent = () => {
     return (
